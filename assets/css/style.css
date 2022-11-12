@@ -28,48 +28,50 @@ header{
 
 .header-left{
     display: flex;
+    height: 5vw;
     background-color: rgb(46, 165, 165);
-    margin-bottom: 10px;
-    width: 300px;
-    padding-left: 10px;
+    width: 23vw;
+    padding-left: 4vw;
     border-bottom-right-radius: 50px;
     border-top-right-radius: 50px;
 }
 
 .name{
-    transform: translateY(35%);
-    font-size: 30px;
+    font-size: 3vw;
     font-family: Georgia, serif;
-    width: 100px;
-    margin-right: 102px;
-    margin-top: 0px;
+    width: 5vw;
+    transform: translateY(.5vw);
+    margin-left: -1vw;
 }
 
 .header-left img{
-    width: 100px;
-    height: 100px;
+    width: 5vw;
+    height: 5vw;
     border-radius: 50%;
-    margin-left: 5px;
+    margin-left: 19vw;
+    position: absolute;
 }
 
 .header-right{
     display: flex;
-    justify-content: right;
+    height: 5vw;
 }
 
 .header-right ul{
+    font-size: 2vw;
     display: flex;
     color: black;
     list-style-type: none;
     margin-right: 1vw;
-    transform: translateY(40%);
+    height: 5vw;
+    transform: translateY(1vw);
 }
 
 .item{
     margin-right: 15px;
     border-bottom: 3px solid rgb(46, 165, 165);
     color: rgb(46, 165, 165);
-    height: 25px;
+    height: 2vw;
 }
 
 /*                                              Body formatting                                          */
@@ -77,18 +79,20 @@ header{
 .background-subtitle{
     display: flex;
     position: relative;
-    color: white;
+    color: rgb(46, 165, 165);
+    font-size: 3vw;
 }
 
 .background-img img{
-    width: 100%;
+    width: 100vw;
+    max-height: 100%;
     background-attachment: fixed;
 }
 
 .subtitle{
     position: absolute;
-    bottom: 8px;
-    right: 16px;
+    bottom: 1vw;
+    right: 1vw;
 }
 
 /*about me & paragraphs*/
@@ -109,7 +113,8 @@ header{
 
 .about-paragraphs{
     border-left: 5px solid red;
-    padding-left: 10px;
+    padding-left: 1vw;
+    font-size: 1vw;
 }
 
 .about p{
