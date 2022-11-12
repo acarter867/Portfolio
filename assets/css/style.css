@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+}
+
+/*
+body{
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 20px;
+    position: absolute;
+}
+*/
+
+main{
+    margin-left: 5vw;
+    margin-right: 5vw;
+    position: absolute;
+}
+
+/*Header formatting*/
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgb(39, 39, 39);
+}
+
+.header-left{
+    display: flex;
+    background-color: rgb(46, 165, 165);
+    margin-bottom: 10px;
+    width: 300px;
+    padding-left: 10px;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+.name{
+    transform: translateY(35%);
+    font-size: 30px;
+    font-family: Georgia, serif;
+    width: 100px;
+    margin-right: 102px;
+    margin-top: 0px;
+}
+
+.header-left img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+
+.header-right{
+    display: flex;
+    justify-content: right;
+}
+
+.header-right ul{
+    display: flex;
+    color: black;
+    list-style-type: none;
+    margin-right: 1vw;
+    transform: translateY(40%);
+}
+
+.item{
+    margin-right: 15px;
+    border-bottom: 3px solid rgb(46, 165, 165);
+    color: rgb(46, 165, 165);
+    height: 25px;
+}
+
+/*                                              Body formatting                                          */
+/* Background image & subtitle */
+.background-subtitle{
+    display: flex;
+    position: relative;
+    color: white;
+}
+
+.background-img img{
+    width: 100%;
+    background-attachment: fixed;
+}
+
+.subtitle{
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+}
+
+/*about me & paragraphs*/
+.about{
+    display: flex;
+    justify-content: center;
+}
+
+.flex-left{
+    width: 25%;
+    text-align: left;
+    font-size: 4vw;
+}
+
+.flex-right{
+    width: 75%;
+}
+
+.about-paragraphs{
+    border-left: 5px solid red;
+    padding-left: 10px;
+}
+
+.about p{
+    margin-bottom: 20px;
+}
+
