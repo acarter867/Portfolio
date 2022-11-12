@@ -1,15 +1,8 @@
 *{
     margin: 0;
+    -webkit-text-size-adjust: 100%;
 }
 
-/*
-body{
-    margin-left: 10vw;
-    margin-right: 10vw;
-    margin-top: 20px;
-    position: absolute;
-}
-*/
 
 main{
     margin-left: 5vw;
