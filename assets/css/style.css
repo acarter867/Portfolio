@@ -1,8 +1,6 @@
 *{
     margin: 0;
-    -webkit-text-size-adjust: 100%;
 }
-
 
 main{
     margin-left: 5vw;
@@ -17,6 +15,7 @@ header{
     justify-content: space-between;
     border: 1px solid rgb(0, 0, 0);
     background-color: rgb(39, 39, 39);
+    
 }
 
 .header-left{
@@ -50,6 +49,14 @@ header{
     height: 5vw;
 }
 
+.header-right a:link{
+    text-decoration: none;
+    color: rgb(46, 165, 165);
+}
+.header-right a:visited{
+    color: rgb(46, 165, 165);
+}
+
 .header-right ul{
     font-size: 2vw;
     display: flex;
@@ -67,6 +74,10 @@ header{
     height: 2vw;
 }
 
+/* .item:hover{
+    cursor: pointer;
+} */
+
 /*                                              Body formatting                                          */
 /* Background image & subtitle */
 .background-subtitle{
@@ -74,10 +85,11 @@ header{
     position: relative;
     color: rgb(46, 165, 165);
     font-size: 3vw;
+    width: 100vw;
 }
 
 .background-img img{
-    width: 100vw;
+    width: 101%;
     max-height: 100%;
     background-attachment: fixed;
 }
@@ -85,8 +97,9 @@ header{
 .subtitle{
     position: absolute;
     bottom: 1vw;
-    right: 1vw;
+    right: 2vw;
 }
+
 
 /*about me & paragraphs*/
 .about{
@@ -95,7 +108,7 @@ header{
 }
 
 .flex-left{
-    width: 25%;
+    width: 25vw;
     text-align: left;
     font-size: 4vw;
 }
@@ -107,10 +120,88 @@ header{
 .about-paragraphs{
     border-left: 5px solid red;
     padding-left: 1vw;
-    font-size: 1vw;
+    font-size: 25px;
 }
 
 .about p{
     margin-bottom: 20px;
 }
+
+/* Work */
+
+@media all and (max-width: 800px){
+    header{
+        min-width: 216vw;
+        height: 12vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border: 1px solid rgb(0, 0, 0);
+        background-color: rgb(39, 39, 39);
+        
+        
+    }
+    .header-left{
+        display: flex;
+        height: 12vw;
+        background-color: rgb(46, 165, 165);
+        width: 45vw;
+        padding-left: 4vw;
+        border-bottom-right-radius: 50px;
+        border-top-right-radius: 50px;
+    }
+    .name{
+        font-size: 5vw;
+        font-family: Georgia, serif;
+        width: 5vw;
+        transform: translateY(2.5vw);
+        margin-left: -.5vw;
+    }
+    .header-left img{
+        width: 12vw;
+        height: 12vw;
+        border-radius: 50%;
+        margin-left: 33vw;
+        position: absolute;
+    }
+    .header-right{
+        display: flex;
+        height: 12vw;
+    }
+    .header-right ul{
+        font-size: 4vw;
+        display: flex;
+        margin-right: 3vw;
+        height: 12vw;
+        transform: translateY(1vw);
+    }
+    .item{
+        margin-top: 2vw;
+        margin-right: 2vw;
+        border-bottom: .5vw solid rgb(46, 165, 165);
+        color: rgb(46, 165, 165);
+        height: 4vw;
+    }
+    .background-subtitle{
+        width: 214vw;
+        max-height: 100%;
+        background-attachment: fixed;
+        font-size: 6vw;
+    }
+    .about p{
+        font-size: 3vw;
+    }
+    .flex-left{
+        width: 20vw;
+        font-size: 3vw;
+    }
+    .about-paragraphs{
+        margin-right: 7vw;
+    }
+    .about{
+        justify-content: left;
+        margin-right: 3vw;
+    }
+}
+
 
