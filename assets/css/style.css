@@ -1,8 +1,6 @@
 *{
     margin: 0;
-    -webkit-text-size-adjust: 100%;
 }
-
 
 main{
     margin-left: 5vw;
@@ -17,6 +15,7 @@ header{
     justify-content: space-between;
     border: 1px solid rgb(0, 0, 0);
     background-color: rgb(39, 39, 39);
+    
 }
 
 .header-left{
@@ -50,6 +49,14 @@ header{
     height: 5vw;
 }
 
+.header-right a:link{
+    text-decoration: none;
+    color: rgb(46, 165, 165);
+}
+.header-right a:visited{
+    color: rgb(46, 165, 165);
+}
+
 .header-right ul{
     font-size: 2vw;
     display: flex;
@@ -67,6 +74,10 @@ header{
     height: 2vw;
 }
 
+/* .item:hover{
+    cursor: pointer;
+} */
+
 /*                                              Body formatting                                          */
 /* Background image & subtitle */
 .background-subtitle{
@@ -74,10 +85,11 @@ header{
     position: relative;
     color: rgb(46, 165, 165);
     font-size: 3vw;
+    width: 100vw;
 }
 
 .background-img img{
-    width: 100vw;
+    width: 101%;
     max-height: 100%;
     background-attachment: fixed;
 }
@@ -85,8 +97,9 @@ header{
 .subtitle{
     position: absolute;
     bottom: 1vw;
-    right: 1vw;
+    right: 2vw;
 }
+
 
 /*about me & paragraphs*/
 .about{
@@ -95,7 +108,7 @@ header{
 }
 
 .flex-left{
-    width: 25%;
+    width: 25vw;
     text-align: left;
     font-size: 4vw;
 }
@@ -107,10 +120,43 @@ header{
 .about-paragraphs{
     border-left: 5px solid red;
     padding-left: 1vw;
-    font-size: 1vw;
+    font-size: 25px;
 }
 
 .about p{
     margin-bottom: 20px;
 }
+
+/* Work */
+
+@media all and (max-width: 800px){
+    .background-subtitle{
+        
+    }
+    header{
+        min-width: 216vw;
+        height: 5vw;
+        
+    }
+    .background-subtitle{
+        width: 214vw;
+        max-height: 100%;
+        background-attachment: fixed;
+    }
+    .about p{
+        font-size: 3vw;
+    }
+    .flex-left{
+        width: 20vw;
+        font-size: 3vw;
+    }
+    .about-paragraphs{
+        margin-right: 7vw;
+    }
+    .about{
+        justify-content: left;
+        margin-right: 3vw;
+    }
+}
+
 
