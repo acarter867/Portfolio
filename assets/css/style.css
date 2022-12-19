@@ -1,3 +1,4 @@
+                                        /* Global formatting */
 *{
     margin: 0;
 }
@@ -8,16 +9,15 @@ main{
     position: absolute;
 }
 
-/*Header formatting*/
+                                        /*Header formatting*/
 header{
-
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     border: 1px solid rgb(0, 0, 0);
     background-color: rgb(39, 39, 39);    
 }
-
+/* Styling for left side of header (name, color banner, & picture) */
 .header-left{
     display: flex;
     height: 5vw;
@@ -44,6 +44,7 @@ header{
     position: absolute;
 }
 
+/* Styling for right side of header (List links) */
 .header-right{
     display: flex;
     height: 5vw;
@@ -78,6 +79,20 @@ header{
 
 /*                                              Body formatting                                          */
 /* Background image & subtitle */
+.flex-left{
+    display: flex;
+    justify-content: right;
+    width: 25vw;
+    font-size: 4vw;
+    margin-right: 2vw;
+}
+
+.flex-right{
+    border-left: .3vw solid rgb(39, 39, 39);
+    display: flex;
+    width: 75%;
+    text-align: left;
+}
 .background-subtitle{
     display: flex;
     position: relative;
@@ -106,20 +121,7 @@ header{
     margin-bottom: 2vw;
 }
 
-.flex-left{
-    display: flex;
-    justify-content: right;
-    width: 25vw;
-    font-size: 4vw;
-    margin-right: 2vw;
-}
 
-.flex-right{
-    border-left: .3vw solid rgb(39, 39, 39);
-    display: flex;
-    width: 75%;
-    text-align: left;
-}
 
 .about-paragraphs{
     padding-left: 1vw;
@@ -225,7 +227,4 @@ header{
     .info{
         height: 3vw;
     }
-
-
-
 }
